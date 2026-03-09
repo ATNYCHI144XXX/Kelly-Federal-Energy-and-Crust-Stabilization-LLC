@@ -1,0 +1,259 @@
+Repository Name: KFECS-Core-Omega
+Description: The Unified Crown-Omega Framework for Kelly Federal Energy & Crust Stabilization, LLC. Integrated solutions for deep-core energy extraction, hypersonic logistics, and sovereign cryptographic security.
+
+1. LICENSE (MIT License)
+Given the mixed nature of the code (research/industrial simulation), the MIT License is the most standard open-source choice. It allows you to maintain copyright while permitting use, modification, and distribution.
+
+Text
+MIT License
+
+Copyright (c) 2026 Kelly Federal Energy & Crust Stabilization, LLC (KFECS)
+Principal Architect: ATNYCHI144XXX
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+2. README.md
+This document serves as the entry point and technical manual.
+
+Markdown
+# KFECS Core Omega Framework
+
+**Current Version:** 1.0.0  
+**Classification:** RESTRICTED // INDUSTRIAL STABILIZATION  
+**Architect:** ATNYCHI144XXX  
+
+## Executive Summary
+The KFECS Core Omega Framework represents a unified mathematical and engineering architecture for high-energy physics applications. It integrates deep-core geothermal extraction technologies (Ice Cutters) with hypersonic logistics defense (Dark Eagle/Omega Ark) and sovereign cryptographic security (SHA-ARK/Cerberus).
+
+## System Architecture
+
+### 1. Energy Extraction (Ice Cutters)
+- **Mechanism:** Deep-core plasma vaporization using 100kV cavitation strikes.
+- **Physics:** Unified K-Math Lattice Engine coupling optical, thermal, and mechanical tensors.
+- **Hardware:** YAG/Sapphire mirror assemblies with LiNbO3 transducer integration.
+
+### 2. Hypersonic Logistics
+- **Platform:** Support for Dark Eagle (LRHW) and Omega Ark transport protocols.
+- **Logic:** Cubic Recursion mathematics for Boundary Layer Transition stabilization (Mach 13+).
+- **Thermal Management:** Stagnation flux ablation prevention algorithms.
+
+### 3. Adaptive Control & Security
+- **Control:** Crown-Omega Neural ODEs for non-linear system evolution.
+- **Security:** SHA-ARK Suite utilizing non-polynomial space mapping and resonant-state verification.
+
+## Repository Structure
+
+```text
+KFECS-Core-Omega/
+├── src/
+│   ├── energy_extraction/      # Plasma focus and transducer engines
+│   ├── aerospace_logistics/    # Hypersonic thermal solvers
+│   ├── adaptive_control/       # Koopman/Neural ODE implementations
+│   └── network_security/       # SHA-ARK/Cerberus cryptographic suite
+├── include/                    # Header files for C++ shared libraries
+├── config/                     # System parameters (env, mirror limits)
+├── tests/                      # Unit tests for tensor integrity
+├── CMakeLists.txt              # Build configuration
+├── requirements.txt            # Python dependencies
+├── LICENSE                     # MIT License
+└── README.md                   # Documentation
+Installation & Build
+Prerequisites
+Python 3.10+
+CMake 3.10+
+C++17 Compiler (GCC/Clang/MSVC)
+Build Steps
+Install Python Dependencies:
+
+bash
+pip install -r requirements.txt
+Compile C++ Solvers:
+
+bash
+mkdir build && cd build
+cmake ..
+make
+Usage
+Running the Unified K-Math Engine:
+
+Python
+from src.energy_extraction.unified_engine import UnifiedKMathLatticeEngine
+
+# Initialize with LiNbO3 parameters
+engine = UnifiedKMathLatticeEngine(orifice_radius=0.005, lattice_density=4650.0, thickness=0.010)
+# Execute Strike
+result = engine.execute_unified_system_strike(voltage=100000.0, delta_temp=300, ...)
+License
+Copyright (c) 2026 Kelly Federal Energy & Crust Stabilization, LLC. Licensed under the MIT License.
+
+Code
+
+---
+
+### 3. Source Code File Structure
+
+Here is how the main Python logic file should be saved within the repo.
+
+**File Path:** `src/energy_extraction/unified_engine.py`
+
+```python
+import numpy as np
+
+class UnifiedKMathLatticeEngine:
+    """
+    Pure mathematical compilation of the Sovereign K-Math Physics Framework.
+    Couples Directed Energy, Electromechanics, Quantum Spin, and Orifice Fluidics.
+    """
+    def __init__(self, orifice_radius, lattice_density, thickness):
+        # Universal Constants
+        self.mu_B = 5.7883818012e-5  # Bohr magneton (eV/T)
+        self.epsilon_0 = 8.854e-12   # Vacuum permittivity (F/m)
+        
+        # Crystal Geometric & Material State
+        self.thickness = thickness
+        self.rho = lattice_density
+        self.r_o = orifice_radius
+        
+        # 1. DIRECTED ENERGY TENSORS
+        self.chi_2 = np.zeros((3, 3, 3))    # 2nd-Order Nonlinear Susceptibility
+        self.dn_dT = 0.0                    # Thermo-Optic Coefficient
+        self.alpha_ij = np.zeros((3, 3))    # Thermal Expansion Tensor
+
+        # 2. HYPERSONIC ACOUSTIC TENSORS (Voigt Notation 6x1 / 6x6 / 3x6)
+        self.d_ij = np.zeros((3, 6))        # Piezoelectric Strain Tensor
+        self.s_ij = np.zeros((6, 6))        # Elastic Compliance Tensor
+        
+        # 3. QUANTUM SPIN HAMILTONIAN TENSORS
+        self.D = 0.0                        # Zero-Field Splitting (Axial)
+        self.E_zfs = 0.0                    # Zero-Field Splitting (Rhombic)
+        self.g_tensor = np.eye(3)           # Zeeman g-factor tensor
+        self.lambda_soc = 0.0               # Spin-Orbit Coupling constant
+        
+        # 4. TRANSDUCER & FLUID CONSTANTS
+        self.fluid_density = 1000.0         # Matrix density (kg/m^3)
+        self.c_fluid = 1500.0               # Acoustic velocity in target fluid (m/s)
+        self.discharge_coeff = 0.62         # Orifice contraction coefficient
+
+    def load_unified_baseline(self, chi_2, dn_dt, alpha, d_ij, s_ij, quantum_params):
+        """Populates all foundational matrices for the unified host crystal."""
+        self.chi_2 = np.array(chi_2)
+        self.dn_dT = dn_dt
+        self.alpha_ij = np.array(alpha)
+        self.d_ij = np.array(d_ij)
+        self.s_ij = np.array(s_ij)
+        
+        self.D = quantum_params.get('D', 0.0)
+        self.E_zfs = quantum_params.get('E', 0.0)
+        self.g_tensor = np.array(quantum_params.get('g', np.eye(3)))
+        self.lambda_soc = quantum_params.get('lambda', 0.0)
+
+    def _compute_optical_polarization(self, E_field):
+        """Computes nonlinear optical frequency doubling (P_i = eps_0 * chi_ijk * E_j * E_k)."""
+        E = np.array(E_field)
+        P = np.zeros(3)
+        for i in range(3):
+            for j in range(3):
+                for k in range(3):
+                    if i < self.chi_2.shape[0] and j < self.chi_2.shape[1] and k < self.chi_2.shape[2]:
+                         P[i] += self.epsilon_0 * self.chi_2[i, j, k] * E[j] * E[k]
+        return P
+
+    def _compute_spin_hamiltonian(self, B_field, S_vector):
+        """Computes the isolated defect quantum energy state."""
+        B = np.array(B_field)
+        S = np.array(S_vector)
+        
+        zeeman = self.mu_B * np.dot(B, np.dot(self.g_tensor, S))
+        zfs = self.D * (S[2]**2 - np.dot(S, S)/3.0) + self.E_zfs * (S[0]**2 - S[1]**2)
+        
+        return zeeman + zfs + self.lambda_soc
+
+    def execute_unified_system_strike(self, voltage, delta_temp, B_field, S_vector, external_stress=None):
+        """
+        Executes the Grand Unified Equation:
+        Simultaneously calculates the NLO thermal threshold, acoustic shock ejection, 
+        and the entangled quantum spin state under the exact same instantaneous conditions.
+        """
+        if external_stress is None:
+            external_stress = np.zeros(6)
+            
+        # 1. EM Field State
+        E_z = voltage / self.thickness
+        E_field = np.array([0.0, 0.0, E_z])
+        
+        # 2. Nonlinear Optical & Thermal Limit State
+        # Avoid division by zero with small epsilon
+        critical_heat_flux = 1.0 / (self.dn_dT * np.trace(self.alpha_ij) + 1e-12)
+        nlo_polarization = self._compute_optical_polarization(E_field)
+        
+        # 3. Coupled Electromechanical Strain State (S = s*T + d^t*E + alpha*dT)
+        # Assuming Voigt notation mapping for thermal expansion to 6x1
+        alpha_voigt = np.array([self.alpha_ij[0,0], self.alpha_ij[1,1], self.alpha_ij[2,2], 0, 0, 0])
+        
+        strain_mech = np.dot(self.s_ij, external_stress)
+        strain_piezo = np.dot(self.d_ij.T, E_field)
+        strain_thermal = alpha_voigt * delta_temp
+        total_strain = strain_mech + strain_piezo + strain_thermal
+        
+        # 4. Orifice Fluidic Ejection Dynamics
+        # c_33 is derived from the elastic compliance matrix
+        c_33 = 1.0 / (self.s_ij[2, 2] + 1e-12)
+        acoustic_velocity = np.sqrt(c_33 / self.rho)
+        f_resonant = acoustic_velocity / (2.0 * self.thickness)
+        
+        axial_displacement = total_strain[2] * self.thickness
+        particle_velocity = axial_displacement * 2.0 * np.pi * f_resonant
+        acoustic_pressure = self.fluid_density * self.c_fluid * particle_velocity
+        
+        flow_velocity = self.discharge_coeff * np.sqrt(2.0 * abs(acoustic_pressure) / self.fluid_density)
+        flow_rate = flow_velocity * (np.pi * self.r_o**2)
+        
+        # 5. Quantum Information State
+        quantum_energy_shift = self._compute_spin_hamiltonian(B_field, S_vector)
+        
+        # UNIFIED RETURN TENSOR
+        return {
+            "NLO_Polarization_Vector": nlo_polarization,
+            "Thermal_Lensing_Threshold": critical_heat_flux,
+            "Total_Lattice_Strain_Vector": total_strain,
+            "Acoustic_Resonance_Hz": f_resonant,
+            "Orifice_Shock_Pressure_Pa": acoustic_pressure,
+            "Cavitation_Flow_Rate_m3_s": flow_rate,
+            "Quantum_Spin_Energy_Shift_eV": quantum_energy_shift
+        }
+4. requirements.txt
+Text
+numpy>=1.24.0
+torch>=2.0.0
+scipy>=1.10.0
+5. CMakeLists.txt
+CMake
+cmake_minimum_required(VERSION 3.10)
+project(KFECS_Core_Omega VERSION 1.0)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# Include directories
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+# Compile Plasma Focus Solver as a shared library
+add_library(plasma_focus SHARED src/energy_extraction/plasma_focus.cpp)
+
+# Compile Hypersonic Thermal Solver as a shared library
+add_library(hypersonic_thermal SHARED sr
